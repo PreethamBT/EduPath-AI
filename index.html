@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduPath AI | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="index.html">🎓 EduPath <span>AI</span></a>
+    <button class="menu" id="menu" aria-label="Toggle menu"
+      aria-expanded="false">☰</button>
+    <div class="links" id="links">
+      <a class="active" href="index.html">Home</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="resources.html">Resources</a>
+      <a href="progress.html">Progress</a>
+      <a href="about.html">About</a>
+      <a href="admin.html" data-admin-link hidden>Admin</a>
+    </div>
+    <a class="btn" href="#account">Login / Register →</a>
+  </nav>
+</header>
+
+<main>
+  <section class="container hero">
+    <div>
+      <span class="tag"></span>
+      <h1>Build Your Personalized
+        <span class="gradient">Learning Roadmap</span>
+      </h1>
+      <p>
+        Turn your ambitions into action. Discover skills, explore learning
+        resources, and track your progress with a roadmap tailored to your goals.
+      </p>
+      <div class="actions">
+        <a class="btn" href="#account">Get Started →</a>
+        <a class="btn secondary" href="#features">Explore Features</a>
+      </div>
+    </div>
+    <div class="visual" aria-label="Education illustration">🎓</div>
+  </section>
+
+  <section class="container section" id="features">
+    <div class="section-title">
+      <span class="gradient">YOUR LEARNING COMPANION</span>
+      <h2>Everything you need to
+        <span class="gradient">move forward</span>
+      </h2>
+      <p>A clear path from learning something new to applying it in a project.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🧠</div>
+        <h3>Personalized Roadmaps</h3>
+        <p>Organize learning around your career goal and experience.</p>
+      </article>
+      <article class="card">
+        <div class="icon">📚</div>
+        <h3>Curated Resources</h3>
+        <p>Explore documentation, tutorials and practical learning tools.</p>
+      </article>
+      <article class="card">
+        <div class="icon">📈</div>
+        <h3>Progress Tracking</h3>
+        <p>Keep track of milestones completed along your journey.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-title">
+      <span class="gradient">HOW IT WORKS</span>
+      <h2>Three steps. One <span class="gradient">clearer path.</span></h2>
+    </div>
+    <div class="steps">
+      <article class="step">
+        <div class="step-number">1</div>
+        <h3>🎯 Choose a goal</h3>
+        <p>Tell us what you want to learn.</p>
+      </article>
+      <article class="step">
+        <div class="step-number">2</div>
+        <h3>✨ Follow your plan</h3>
+        <p>Work through topics and milestones.</p>
+      </article>
+      <article class="step">
+        <div class="step-number">3</div>
+        <h3>🚀 Track your growth</h3>
+        <p>Celebrate progress and keep improving.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="container cta">
+    <div>
+      <h2>Learn Today. Lead Tomorrow.</h2>
+      <p>Your next step starts with one goal.</p>
+    </div>
+    <a class="btn" href="#account">Start Learning →</a>
+  </section>
+
+  <section class="container section account-section" id="account">
+    <div class="section-title">
+      <span class="gradient">YOUR ACCOUNT</span>
+      <h2>Welcome to <span class="gradient">EduPath AI</span></h2>
+      <p>Log in or register to access your learning journey.</p>
+    </div>
+
+    <div class="card account-card">
+      <div class="auth-tabs">
+        <button class="btn auth-tab" type="button" data-auth="login">
+          Student Login
+        </button>
+        <button class="btn secondary auth-tab" type="button" data-auth="register">
+          Student Registration
+        </button>
+        <button class="btn secondary auth-tab" type="button" data-auth="admin">
+          Admin Login
+        </button>
+        <button class="btn secondary auth-tab" type="button" data-auth="setup">
+          Admin Setup
+        </button>
+      </div>
+
+      <p id="authMessage" role="status" aria-live="polite"></p>
+
+      <form id="registerForm" hidden>
+        <h3>Create Student Account</h3>
+        <label for="registerName">Full name</label>
+        <input id="registerName" name="name" required maxlength="80"
+          autocomplete="name" placeholder="Enter your full name">
+
+        <label for="registerEmail">Email address</label>
+        <input id="registerEmail" name="email" type="email" required
+          autocomplete="email" placeholder="Enter your email">
+
+        <label for="registerPassword">Create password</label>
+        <input id="registerPassword" name="password" type="password"
+          required minlength="8" autocomplete="new-password"
+          placeholder="At least 8 characters">
+
+        <button class="btn" type="submit">Create Account →</button>
+      </form>
+
+      <form id="loginForm">
+        <h3>Student Login</h3>
+        <label for="loginEmail">Email address</label>
+        <input id="loginEmail" name="email" type="email" required
+          autocomplete="username" placeholder="Enter your email">
+
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" name="password" type="password"
+          required autocomplete="current-password"
+          placeholder="Enter your password">
+
+        <button class="btn" type="submit">Login →</button>
+      </form>
+
+      <form id="adminSetupForm" hidden>
+        <h3>Admin Account Setup</h3>
+        <p>Only an email on the approved list can set up an admin account.</p>
+
+        <label for="setupEmail">Authorized admin email</label>
+        <input id="setupEmail" name="email" type="email" required
+          autocomplete="username" placeholder="Enter authorized email">
+
+        <label for="setupPassword">Create admin password</label>
+        <input id="setupPassword" name="password" type="password"
+          required minlength="8" autocomplete="new-password"
+          placeholder="At least 8 characters">
+
+        <button class="btn" type="submit">Set Up Admin →</button>
+      </form>
+
+      <form id="adminLoginForm" hidden>
+        <h3>Admin Login</h3>
+        <label for="adminEmail">Admin email</label>
+        <input id="adminEmail" name="email" type="email" required
+          autocomplete="username" placeholder="Enter admin email">
+
+        <label for="adminPassword">Admin password</label>
+        <input id="adminPassword" name="password" type="password"
+          required autocomplete="current-password"
+          placeholder="Enter admin password">
+
+        <button class="btn" type="submit">Admin Login →</button>
+      </form>
+
+      <div id="accountPanel" hidden>
+        <h3 id="welcomeMessage"></h3>
+        <p id="accountDetails"></p>
+        <p id="adminStats" hidden></p>
+        <a class="btn" href="roadmap.html">Open Learning Portal →</a>
+        <button class="btn secondary" id="logoutButton" type="button">
+          Logout
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>🎓 EduPath AI</span>
+    <span>© <span id="year"></span> EduPath AI · Hackathon prototype</span>
+    <a href="about.html">About this project</a>
+  </div>
+</footer>
+</body>
+</html>
+

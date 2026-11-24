@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduPath AI | About</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="index.html">🎓 EduPath <span>AI</span></a>
+    <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="resources.html">Resources</a>
+      <a href="progress.html">Progress</a>
+      <a class="active" href="about.html">About</a>
+      <a href="admin.html" data-admin-link hidden>Admin</a>
+    </div>
+    <button class="btn logout-trigger" type="button">Logout</button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-heading">
+    <span class="gradient"></span>
+    <h1>About <span class="gradient">EduPath AI</span></h1>
+    <p>A learning companion designed to help students turn career ambitions into practical, trackable learning journeys.</p>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🎯</div>
+        <h3>The Problem</h3>
+        <p>Students can struggle to choose what to learn, which resources to use and what to do next.</p>
+      </article>
+      <article class="card">
+        <div class="icon">🧭</div>
+        <h3>Our Solution</h3>
+        <p>EduPath AI organizes learning into career-focused roadmaps, milestones and resource links.</p>
+      </article>
+      <article class="card">
+        <div class="icon">📊</div>
+        <h3>Our Goal</h3>
+        <p>Make learning progress easier to understand, track and improve over time.</p>
+      </article>
+    </div>
+
+    <div class="panel" style="margin-top:20px">
+      <h2>Built for student learning</h2>
+      <p>This hackathon prototype demonstrates roadmap generation, resource discovery, progress tracking and a browser-based admin dashboard.</p>
+      <p class="notice">The current version uses local browser storage. A production deployment needs a backend, a database and server-side authorization.</p>
+      <a class="btn" href="roadmap.html">Explore the Roadmap →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>🎓 EduPath AI</span>
+    <span>© <span id="year"></span> Hackathon prototype</span>
+    <a href="index.html">Home</a>
+  </div>
+</footer>
+</body>
+</html>

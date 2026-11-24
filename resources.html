@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduPath AI | Resources</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="index.html">🎓 EduPath <span>AI</span></a>
+    <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a class="active" href="resources.html">Resources</a>
+      <a href="progress.html">Progress</a>
+      <a href="about.html">About</a>
+      <a href="admin.html" data-admin-link hidden>Admin</a>
+    </div>
+    <button class="btn logout-trigger" type="button">Logout</button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-heading">
+    <span class="gradient">LEARN WITH CURATED MATERIAL</span>
+    <h1>Learning <span class="gradient">Resources</span></h1>
+    <p>Find documentation, tutorials and practical tools for your learning path.</p>
+    <label for="resourceSearch">Search resources</label>
+    <input id="resourceSearch" type="search"
+      placeholder="Search Python, HTML, SQL, AI...">
+    <p id="resourceCount" class="notice" aria-live="polite"></p>
+    <p id="noResources" hidden>No matching resources found.</p>
+  </section>
+
+  <section class="section">
+    <h2>Web Development</h2>
+    <div class="grid">
+      <article class="card resource-card" id="web-html" data-search="html css web beginner">
+        <div class="icon">🌐</div>
+        <h3>HTML & CSS</h3>
+        <p>Learn page structure, styling and responsive layouts.</p>
+        <a class="btn resource-link" href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="web-javascript" data-search="javascript web programming">
+        <div class="icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>Learn variables, functions, events and interactivity.</p>
+        <a class="btn resource-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="web-project" data-search="website project portfolio freecodecamp">
+        <div class="icon">🛠️</div>
+        <h3>Build a Website</h3>
+        <p>Practice by creating projects and a portfolio.</p>
+        <a class="btn resource-link" href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="web-git" data-search="git github deployment">
+        <div class="icon">🚀</div>
+        <h3>Git and GitHub</h3>
+        <p>Learn version control and publish projects.</p>
+        <a class="btn resource-link" href="https://skills.github.com/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>AI and Machine Learning</h2>
+    <div class="grid">
+      <article class="card resource-card" id="ai-python" data-search="python programming ai beginner">
+        <div class="icon">🐍</div>
+        <h3>Python</h3>
+        <p>Start with variables, loops, functions and modules.</p>
+        <a class="btn resource-link" href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="ai-math" data-search="math statistics probability data">
+        <div class="icon">📐</div>
+        <h3>Math and Data</h3>
+        <p>Build a foundation in probability and statistics.</p>
+        <a class="btn resource-link" href="https://www.khanacademy.org/math/statistics-probability" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="ai-ml" data-search="machine learning models datasets">
+        <div class="icon">🤖</div>
+        <h3>Machine Learning</h3>
+        <p>Explore models, datasets and evaluation.</p>
+        <a class="btn resource-link" href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="ai-project" data-search="ai project kaggle practice">
+        <div class="icon">💡</div>
+        <h3>AI Project Practice</h3>
+        <p>Use datasets to experiment with a small project.</p>
+        <a class="btn resource-link" href="https://www.kaggle.com/learn" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Software Development</h2>
+    <div class="grid">
+      <article class="card resource-card" id="software-programming" data-search="programming computer science cs50">
+        <div class="icon">💻</div>
+        <h3>Programming Foundations</h3>
+        <p>Practice core programming and problem-solving skills.</p>
+        <a class="btn resource-link" href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="software-dsa" data-search="data structures algorithms dsa">
+        <div class="icon">🧩</div>
+        <h3>Data Structures</h3>
+        <p>Visualize algorithms and common data structures.</p>
+        <a class="btn resource-link" href="https://visualgo.net/en" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="software-git" data-search="git sql database">
+        <div class="icon">🗃️</div>
+        <h3>Git and Databases</h3>
+        <p>Learn version control and basic SQL queries.</p>
+        <a class="btn resource-link" href="https://sqlbolt.com/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="software-project" data-search="software project github">
+        <div class="icon">🧰</div>
+        <h3>Software Project</h3>
+        <p>Apply your knowledge in a project and publish your code.</p>
+        <a class="btn resource-link" href="https://skills.github.com/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Data Analytics</h2>
+    <div class="grid">
+      <article class="card resource-card" id="data-spreadsheets" data-search="excel spreadsheets charts">
+        <div class="icon">📊</div>
+        <h3>Spreadsheets</h3>
+        <p>Organize data and create simple charts.</p>
+        <a class="btn resource-link" href="https://support.microsoft.com/excel" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="data-sql" data-search="sql database query">
+        <div class="icon">🗄️</div>
+        <h3>SQL</h3>
+        <p>Practice querying and filtering structured data.</p>
+        <a class="btn resource-link" href="https://sqlbolt.com/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="data-python" data-search="python pandas data analysis">
+        <div class="icon">🐼</div>
+        <h3>Python Data Analysis</h3>
+        <p>Explore datasets with pandas.</p>
+        <a class="btn resource-link" href="https://pandas.pydata.org/docs/getting_started/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+      <article class="card resource-card" id="data-dashboard" data-search="dashboard visualization tableau">
+        <div class="icon">📈</div>
+        <h3>Dashboards</h3>
+        <p>Learn how to communicate insights visually.</p>
+        <a class="btn resource-link" href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer">Open Resource ↗</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>🎓 EduPath AI</span>
+    <span>© <span id="year"></span> Hackathon prototype</span>
+    <a href="about.html">About</a>
+  </div>
+</footer>
+</body>
+</html>

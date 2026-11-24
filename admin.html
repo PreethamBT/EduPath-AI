@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduPath AI | Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="index.html">🎓 EduPath <span>AI</span></a>
+    <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="resources.html">Resources</a>
+      <a href="progress.html">Progress</a>
+      <a href="about.html">About</a>
+      <a class="active" href="admin.html" data-admin-link>Admin</a>
+    </div>
+    <button class="btn logout-trigger" type="button">Logout</button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-heading">
+    <span class="gradient">ADMINISTRATION</span>
+    <h1>Website <span class="gradient">Analytics</span></h1>
+    <p>Review student registrations, milestone completion, resource engagement and recent activity.</p>
+  </section>
+
+  <section class="section">
+    <div id="adminDashboard"></div>
+    <p class="notice">
+      Demo limitation: analytics are stored in this browser and are not
+      automatically combined across different devices.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>🎓 EduPath AI</span>
+    <span>© <span id="year"></span> Hackathon prototype</span>
+    <a href="index.html">Home</a>
+  </div>
+</footer>
+</body>
+</html>

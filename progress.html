@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduPath AI | Progress</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="index.html">🎓 EduPath <span>AI</span></a>
+    <button class="menu" id="menu" aria-label="Toggle menu">☰</button>
+    <div class="links" id="links">
+      <a href="index.html">Home</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="resources.html">Resources</a>
+      <a class="active" href="progress.html">Progress</a>
+      <a href="about.html">About</a>
+      <a href="admin.html" data-admin-link hidden>Admin</a>
+    </div>
+    <button class="btn logout-trigger" type="button">Logout</button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-heading">
+    <span class="gradient">YOUR ACHIEVEMENTS</span>
+    <h1>My Learning <span class="gradient">Progress</span></h1>
+    <p>Small steps add up. Review your progress and keep learning.</p>
+  </section>
+
+  <section class="section">
+    <div id="dashboard" class="grid">
+      <article class="card">
+        <div class="icon">✅</div>
+        <h3 id="completedCount">0</h3>
+        <p>Completed milestones</p>
+      </article>
+      <article class="card">
+        <div class="icon">📈</div>
+        <h3 id="percent">0%</h3>
+        <p>Roadmap completion</p>
+        <div class="progress-track"><div id="dashboardBar" class="progress-bar"></div></div>
+      </article>
+      <article class="card">
+        <div class="icon">🎯</div>
+        <h3 id="lastGoal">No roadmap yet</h3>
+        <p>Latest career goal</p>
+      </article>
+    </div>
+
+    <div class="panel" style="margin-top:20px">
+      <h2>Continue your journey</h2>
+      <p>Open your roadmap to generate or update your learning plan.</p>
+      <a class="btn" href="roadmap.html">Open Roadmap →</a>
+      <button class="btn secondary" id="resetProgress" type="button">
+        Reset My Progress
+      </button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>🎓 EduPath AI</span>
+    <span>© <span id="year"></span> Hackathon prototype</span>
+    <a href="about.html">About</a>
+  </div>
+</footer>
+</body>
+</html>
